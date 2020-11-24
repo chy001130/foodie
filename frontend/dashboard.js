@@ -82,19 +82,18 @@ const createNavbar = () => {
 /*creates and returns an html element (as a string) with a search bar and submit button*/
 const createSearch = () => {
     const div = `<br>
-                    <div class="columns is-centered searchbar">
+                  <div class="columns is-centered searchbar">
                     <div class="column is-half">
                      <div class="field has-addons">
-                      <div class="control is-expanded">
-                            <input id='recipe-search' autocomplete="on" class="input" type="text" placeholder="Your Favorite Recipe">
+                        <div class="control is-expanded">
+                            <input id='recipe-search' autocomplete="on" class="input" type="text" placeholder="Your Favorite Recipe" style="z-index: 2">
                         </div>
                         <div class="control">
                              <button id='recipe-submit'class="button is-success searchButton">Search</button>
                         </div>
-                        </div>
-                        </div>
+                      </div>
+                   </div>
                 </div>`
-
     return div
 }
 

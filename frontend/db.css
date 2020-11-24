@@ -15,6 +15,7 @@ body {
 /* Words container */
 .ac__inner{
     background: #f6f6f6;
+    z-index: 2;
 }
 
 /* Individual word element */
