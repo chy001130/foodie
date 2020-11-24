@@ -139,7 +139,6 @@ app.get('/user/:id/data', (req, res) => {
 
 app.post('/user/:id/recipe', (req, res) => {
 
-    console.log(req);
     const id = req.params.id
     const recipe = req.body.recipe
 
@@ -159,7 +158,6 @@ app.post('/user/:id/recipe', (req, res) => {
 app.delete('/user/:id/recipe', (req, res) => {
     const id = req.params.id
     const recipe = req.query.recipe
-    console.log(recipe)
 
     if (userData.has(id)) {
         const user = User.getUserData(id)
